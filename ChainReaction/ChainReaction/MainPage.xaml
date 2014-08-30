@@ -1,0 +1,29 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:ChainReaction"
+    x:Class="ChainReaction.MainPage"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+    <Grid x:Name="root_grid">
+        <StackPanel x:Name="panel" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <local:Box x:Name="box" Width="210" Height="210" Color="yellow" Count="2" BorderBrush="{x:Null}" Tap="box_Tap"/>
+            <TextBlock x:Name="title" TextWrapping="Wrap" Text="Chain Reaction" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" FontFamily="consolas" FontWeight="Bold"/>
+            <Button x:Name="play2_button" Content="2 players" Click="play2_button_Click" FontFamily="consolas" FontSize="24" Background="#00000000" BorderBrush="Lime" Foreground="Lime" FontWeight="Bold"/>
+            <Button x:Name="play3_button" Content="3 players" Click="play3_button_Click" FontFamily="consolas" FontSize="24" Background="#00000000" BorderBrush="Lime" Foreground="Lime" FontWeight="Bold"/>
+            <Button x:Name="play4_button" Content="4 players" Click="play4_button_Click" FontFamily="consolas" FontSize="24" Background="#00000000" BorderBrush="Lime" Foreground="Lime" FontWeight="Bold"/>
+            <Button x:Name="help_button" Content="how to play" Click="help_button_Click" FontFamily="consolas" FontSize="24" Background="#00000000" BorderBrush="Lime" Foreground="Lime" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+
+</phone:PhoneApplicationPage>

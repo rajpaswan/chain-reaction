@@ -1,0 +1,65 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:ChainReaction"
+    x:Class="ChainReaction.HelpPage"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="grid" Background="Transparent">
+        <StackPanel x:Name="panel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <local:Box d:LayoutOverrides="Width, Height" Color="red" Count="3" BorderBrush="Transparent"/>
+            <TextBlock x:Name="title" TextWrapping="Wrap" Text="Chain Reaction" VerticalAlignment="Top" Foreground="Lime" FontFamily="consolas" FontSize="48" TextAlignment="Center"/>
+            <TextBlock x:Name="content" TextWrapping="Wrap" FontFamily="consolas" FontSize="24" TextAlignment="Center" Foreground="Gray" HorizontalAlignment="Center" VerticalAlignment="Center">
+            	<Run/>
+            	<LineBreak/>
+            	<Run Text="A game based on chain reaction"/>
+            	<LineBreak/>
+            	<Run Text="of atoms and degree of freedom."/>
+            	<LineBreak/>
+            	<Run Text="When the count of atoms in a"/>
+            	<Run Text=" "/>
+            	<Run Text="block is equals to the degree of"/>
+            	<Run Text=" "/>
+            	<Run Text="freedom of the block, it pop"/>
+            	<Run Text=" "/>
+            	<Run Text="and"/>
+            	<Run Text=" "/>
+            	<Run Text="makes neighbo"/>
+            	<Run Text="u"/>
+            	<Run Text="r blocks do"/>
+            	<Run Text=" "/>
+            	<Run Text="the same."/>
+            	<LineBreak/>
+            	<Run/>
+            	<LineBreak/>
+            	<Run Text="You need to consume your opponent's atoms by popping your atoms."/>
+            	<LineBreak/>
+            	<Run/>
+            	<LineBreak/>
+            	<Run Text="degree of freedom"/>
+            	<LineBreak/>
+            	<Run Text="corner blocks - 2"/>
+            	<LineBreak/>
+            	<Run Text="edge blocks   - 3"/>
+            	<LineBreak/>
+            	<Run Text="inner blocks  - 4"/>
+            	<LineBreak/>
+            	<Run/>
+            	<LineBreak/>
+            	<Run Text="Have fun playing the game!"/>
+            	<LineBreak/>
+            	<Run/>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,28 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:ChainReaction"
+    x:Class="ChainReaction.GamePage"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar x:Name="appbar" Mode="Minimized" BackgroundColor="Black" ForegroundColor="{StaticResource PhoneAccentColor}">
+            <shell:ApplicationBarIconButton x:Name="new_button" IconUri="/Assets/AppBar/new.png" Text="new game" Click="new_button_Click"/>
+            <shell:ApplicationBarIconButton x:Name="undo_button" IconUri="/Assets/AppBar/undo.png" Text="undo" Click="undo_button_Click"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    <Grid x:Name="grid">
+        <Border x:Name="border" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#00000000" BorderBrush="#00000000">
+            <StackPanel x:Name="panel" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="70" MinHeight="73"/>
+        </Border>
+    </Grid>
+
+</phone:PhoneApplicationPage>
